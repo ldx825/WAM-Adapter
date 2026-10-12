@@ -1,0 +1,62 @@
+# @package _global_
+
+defaults:
+  - train
+  - override /task: robotwin_uncond_3cam_384_1e-4
+  - _self_
+
+ckpt: null
+gpu_id: 0
+
+model:
+  load_text_encoder: true
+  skip_dit_load_from_pretrain: true
+  action_dit_pretrained_path: null
+
+EVALUATION:
+  robotwin_root: third_party/RoboTwin
+  policy_name: wam_adapter_policy
+  task_name: null
+  task_config: demo_randomized
+  instruction_type: unseen
+  eval_num_episodes: 100
+  eval_total_episodes: ${EVALUATION.eval_num_episodes}
+  # Optional exact seed shard used by the global evaluation queue.  When set,
+  # the evaluator consumes precisely these accepted RoboTwin seeds instead of
+  # discovering a new sequence from `seed`.
+  eval_seed_list_path: null
+  eval_episode_offset: 0
+  output_dir: ./evaluate_results/robotwin/${hydra:runtime.choices.task}/${now:%Y%m%d_%H%M%S}
+  use_training_run_config: false
+  training_config_path: null
+
+  # Action inference
+  action_horizon: null
+  replan_steps: 24
+  num_inference_steps: ${eval_num_inference_steps}
+  sigma_shift: null
+  text_cfg_scale: 1.0
+  negative_prompt: ""
+  rand_device: cpu
+  tiled: false
+  timing_enabled: false
+  skip_get_obs_within_replan: true
+  eval_video_fps: 10
+  eval_video_record_mode: action_step
+  eval_video_frame_stride: 1
+
+  # Runtime inputs
+  dataset_stats_path: null
+  device: cuda
+
+MULTIRUN:
+  enabled: false
+  num_gpus: 8
+  max_tasks_per_gpu: 2
+
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: .
+  output_subdir: null

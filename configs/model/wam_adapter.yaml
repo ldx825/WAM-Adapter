@@ -1,0 +1,85 @@
+_target_: wam_adapter.runtime.create_wam_adapter
+model_id: Wan-AI/Wan2.1-T2V-1.3B
+video_backbone_type: wan2_1_t2v
+video_backbone_name: Wan-AI/Wan2.1-T2V-1.3B
+video_latent_spatial_downsample_factor: 2
+apply_video_latent_downsample_to_action_branch: false
+tokenizer_model_id: Wan-AI/Wan2.1-T2V-1.3B
+tokenizer_max_len: 128
+load_text_encoder: false
+proprio_dim: ${data.train.processor.proprio_output_dim}
+redirect_common_files: false
+mot_checkpoint_mixed_attn: false
+action_dit_pretrained_path: null
+skip_dit_load_from_pretrain: false
+
+wam_adapter:
+  # LoRA remains the only trainable modification inside the current-frame Wan.
+  use_wam_adapter: false
+  freeze_backbone: true
+  remove_original_action_expert: true
+  adapter_layer_indices: [8, 16, 24]
+  adapter_dim: 256
+  adapter_scale: 1.0
+  use_backbone_lora: true
+  lora_layer_indices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+  lora_target_modules: ['self_attn.q', 'self_attn.k', 'self_attn.v', 'self_attn.o', 'cross_attn.q', 'cross_attn.k', 'cross_attn.v', 'cross_attn.o', 'ffn.0', 'ffn.2']
+  lora_rank: 64
+  lora_alpha: 128.0
+  lora_dropout: 0.0
+
+video_dit_config:
+  has_image_input: false
+  patch_size: [1, 2, 2]
+  in_dim: 48
+  hidden_dim: 3072
+  ffn_dim: 14336
+  freq_dim: 256
+  text_dim: 4096
+  out_dim: 48
+  num_heads: 24
+  attn_head_dim: 128
+  num_layers: 30
+  eps: 1.0e-06
+  seperated_timestep: true
+  require_clip_embedding: false
+  require_vae_embedding: false
+  fuse_vae_embedding_in_latents: true
+  use_gradient_checkpointing: ${model.mot_checkpoint_mixed_attn}
+  video_attention_mask_mode: first_frame_causal
+  action_conditioned: false
+  action_dim: ${data.train.processor.action_output_dim}
+
+action_dit_config:
+  action_dim: ${data.train.processor.action_output_dim}
+  hidden_dim: 1024
+  ffn_dim: 4096
+  num_heads: 24
+  attn_head_dim: 128
+  num_layers: 30
+  text_dim: 4096
+  freq_dim: 256
+  eps: 1.0e-06
+  use_gradient_checkpointing: false
+
+video_scheduler:
+  train_shift: 5.0
+  infer_shift: 5.0
+  num_train_timesteps: 1000
+
+# Retained only for the common model loader; this deterministic action path
+# never runs diffusion denoising.
+action_scheduler:
+  train_shift: 5.0
+  infer_shift: 5.0
+  num_train_timesteps: 1000
+
+loss:
+  lambda_video: 1.0
+  lambda_action: 1.0
+  use_first_frame_residual_video_target: false
+  action_temporal_weighting:
+    enabled: true
+    num_prefix_steps: 8
+    prefix_weight: 1.0
+    tail_weight: 0.0

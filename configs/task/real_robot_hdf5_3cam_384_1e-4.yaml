@@ -1,0 +1,28 @@
+# @package _global_
+
+defaults:
+  - override /data: real_robot_hdf5
+  - override /model: wam_adapter
+  - _self_
+
+batch_size: 16
+num_workers: 8
+
+model:
+  mot_checkpoint_mixed_attn: false
+  video_backbone_type: wan2_1_t2v
+  video_backbone_name: Wan-AI/Wan2.1-T2V-1.3B
+  video_latent_spatial_downsample_factor: 2
+  apply_video_latent_downsample_to_action_branch: false
+
+lr_scheduler_type: "cosine"
+learning_rate: 1e-4
+num_epochs: 5
+max_steps: null
+log_every: 10
+save_every: 2500
+eval_every: 500
+
+gradient_accumulation_steps: 1
+weight_decay: 1e-2
+resume: null

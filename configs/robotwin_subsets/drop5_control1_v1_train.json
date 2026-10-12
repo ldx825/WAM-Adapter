@@ -1,0 +1,1705 @@
+{
+  "name": "robotwin_drop5_control1_v1",
+  "seed": 42,
+  "per_condition": 20,
+  "num_tasks": 6,
+  "num_episodes": 240,
+  "tasks": [
+    "adjust_bottle",
+    "blocks_ranking_size",
+    "hanging_mug",
+    "move_stapler_pad",
+    "place_cans_plasticbox",
+    "place_dual_shoes"
+  ],
+  "mapping_contract": "50 clean followed by 500 randomized episodes per 550-episode task block",
+  "source": {
+    "dataset_root": "./data/robotwin2.0/robotwin2.0",
+    "info_sha256": "441a98fffe047bb642dba617bd6d89bbe313dd1379858744844536d73c493609",
+    "episodes_sha256": "7489b3636f8960d04491df4319711f6f12d38f72b8a775408a5d7af4689070b9"
+  },
+  "episode_indices": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    13,
+    14,
+    15,
+    17,
+    27,
+    32,
+    34,
+    36,
+    37,
+    40,
+    44,
+    46,
+    47,
+    49,
+    53,
+    129,
+    131,
+    151,
+    162,
+    192,
+    224,
+    264,
+    266,
+    279,
+    329,
+    351,
+    382,
+    407,
+    409,
+    416,
+    438,
+    462,
+    464,
+    495,
+    1652,
+    1655,
+    1656,
+    1657,
+    1663,
+    1666,
+    1668,
+    1671,
+    1672,
+    1673,
+    1674,
+    1679,
+    1682,
+    1684,
+    1688,
+    1692,
+    1694,
+    1695,
+    1696,
+    1698,
+    1723,
+    1735,
+    1740,
+    1751,
+    1783,
+    1798,
+    1816,
+    1819,
+    1842,
+    1848,
+    1886,
+    1894,
+    1932,
+    2025,
+    2038,
+    2060,
+    2095,
+    2127,
+    2137,
+    2143,
+    5504,
+    5510,
+    5513,
+    5514,
+    5515,
+    5517,
+    5520,
+    5522,
+    5523,
+    5524,
+    5526,
+    5529,
+    5534,
+    5538,
+    5539,
+    5541,
+    5542,
+    5543,
+    5544,
+    5545,
+    5566,
+    5578,
+    5583,
+    5658,
+    5667,
+    5687,
+    5711,
+    5752,
+    5755,
+    5805,
+    5840,
+    5885,
+    5917,
+    5943,
+    5947,
+    5962,
+    5970,
+    5998,
+    6017,
+    6032,
+    8255,
+    8258,
+    8259,
+    8264,
+    8265,
+    8266,
+    8273,
+    8274,
+    8275,
+    8277,
+    8279,
+    8281,
+    8282,
+    8284,
+    8285,
+    8287,
+    8290,
+    8291,
+    8295,
+    8296,
+    8305,
+    8324,
+    8332,
+    8356,
+    8378,
+    8381,
+    8428,
+    8495,
+    8497,
+    8516,
+    8539,
+    8570,
+    8583,
+    8605,
+    8621,
+    8648,
+    8705,
+    8740,
+    8782,
+    8797,
+    14300,
+    14306,
+    14307,
+    14310,
+    14311,
+    14316,
+    14317,
+    14318,
+    14321,
+    14327,
+    14329,
+    14332,
+    14334,
+    14339,
+    14341,
+    14343,
+    14345,
+    14346,
+    14347,
+    14349,
+    14350,
+    14428,
+    14432,
+    14451,
+    14502,
+    14515,
+    14541,
+    14609,
+    14621,
+    14626,
+    14656,
+    14661,
+    14670,
+    14677,
+    14740,
+    14748,
+    14780,
+    14820,
+    14822,
+    14838,
+    15401,
+    15403,
+    15404,
+    15405,
+    15407,
+    15408,
+    15410,
+    15415,
+    15416,
+    15419,
+    15423,
+    15430,
+    15431,
+    15434,
+    15435,
+    15436,
+    15438,
+    15440,
+    15444,
+    15449,
+    15552,
+    15558,
+    15609,
+    15641,
+    15654,
+    15666,
+    15674,
+    15714,
+    15726,
+    15760,
+    15782,
+    15793,
+    15803,
+    15815,
+    15823,
+    15836,
+    15896,
+    15910,
+    15925,
+    15943
+  ],
+  "episodes": [
+    {
+      "episode_index": 1,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 2,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 5,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 6,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 7,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 8,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 13,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 14,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 15,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 17,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 27,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 32,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 34,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 36,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 37,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 40,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 44,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 46,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 47,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 49,
+      "task_name": "adjust_bottle",
+      "condition": "clean",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 53,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 129,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 131,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 151,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 162,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 192,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 224,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 264,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 266,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 279,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 329,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 351,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 382,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 407,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 409,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 416,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 438,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 462,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 464,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 495,
+      "task_name": "adjust_bottle",
+      "condition": "randomized",
+      "task_block_start": 0
+    },
+    {
+      "episode_index": 1652,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1655,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1656,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1657,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1663,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1666,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1668,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1671,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1672,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1673,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1674,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1679,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1682,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1684,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1688,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1692,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1694,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1695,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1696,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1698,
+      "task_name": "blocks_ranking_size",
+      "condition": "clean",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1723,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1735,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1740,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1751,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1783,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1798,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1816,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1819,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1842,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1848,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1886,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1894,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 1932,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 2025,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 2038,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 2060,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 2095,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 2127,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 2137,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 2143,
+      "task_name": "blocks_ranking_size",
+      "condition": "randomized",
+      "task_block_start": 1650
+    },
+    {
+      "episode_index": 5504,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5510,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5513,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5514,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5515,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5517,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5520,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5522,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5523,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5524,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5526,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5529,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5534,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5538,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5539,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5541,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5542,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5543,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5544,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5545,
+      "task_name": "hanging_mug",
+      "condition": "clean",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5566,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5578,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5583,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5658,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5667,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5687,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5711,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5752,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5755,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5805,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5840,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5885,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5917,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5943,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5947,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5962,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5970,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 5998,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 6017,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 6032,
+      "task_name": "hanging_mug",
+      "condition": "randomized",
+      "task_block_start": 5500
+    },
+    {
+      "episode_index": 8255,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8258,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8259,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8264,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8265,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8266,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8273,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8274,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8275,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8277,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8279,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8281,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8282,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8284,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8285,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8287,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8290,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8291,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8295,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8296,
+      "task_name": "move_stapler_pad",
+      "condition": "clean",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8305,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8324,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8332,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8356,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8378,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8381,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8428,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8495,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8497,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8516,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8539,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8570,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8583,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8605,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8621,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8648,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8705,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8740,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8782,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 8797,
+      "task_name": "move_stapler_pad",
+      "condition": "randomized",
+      "task_block_start": 8250
+    },
+    {
+      "episode_index": 14300,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14306,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14307,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14310,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14311,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14316,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14317,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14318,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14321,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14327,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14329,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14332,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14334,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14339,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14341,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14343,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14345,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14346,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14347,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14349,
+      "task_name": "place_cans_plasticbox",
+      "condition": "clean",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14350,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14428,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14432,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14451,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14502,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14515,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14541,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14609,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14621,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14626,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14656,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14661,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14670,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14677,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14740,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14748,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14780,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14820,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14822,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 14838,
+      "task_name": "place_cans_plasticbox",
+      "condition": "randomized",
+      "task_block_start": 14300
+    },
+    {
+      "episode_index": 15401,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15403,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15404,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15405,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15407,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15408,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15410,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15415,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15416,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15419,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15423,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15430,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15431,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15434,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15435,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15436,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15438,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15440,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15444,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15449,
+      "task_name": "place_dual_shoes",
+      "condition": "clean",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15552,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15558,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15609,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15641,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15654,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15666,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15674,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15714,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15726,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15760,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15782,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15793,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15803,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15815,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15823,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15836,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15896,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15910,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15925,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    },
+    {
+      "episode_index": 15943,
+      "task_name": "place_dual_shoes",
+      "condition": "randomized",
+      "task_block_start": 15400
+    }
+  ]
+}

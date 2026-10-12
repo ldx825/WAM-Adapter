@@ -1,0 +1,23 @@
+{
+  "name": "precompute_speed_probe_16episodes",
+  "purpose": "Four-GPU episode-packed factor-2 latent-cache throughput probe",
+  "num_episodes": 16,
+  "episode_indices": [
+    0,
+    1,
+    550,
+    551,
+    1100,
+    1101,
+    1650,
+    1651,
+    2200,
+    2201,
+    2750,
+    2751,
+    3300,
+    3301,
+    3850,
+    3851
+  ]
+}
