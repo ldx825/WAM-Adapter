@@ -6,7 +6,7 @@
 <p>
   <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/arXiv-coming%20soon-B31B1B?style=flat&labelColor=555555&logo=arxiv&logoColor=white" alt="arXiv"></a>
   <a href="https://ldx825.github.io/WAM-Adapter-Homepage/"><img src="https://img.shields.io/badge/Project-Page-4C8BF5?style=flat&labelColor=555555" alt="Project Page"></a>
-  <a href="https://huggingface.co/ldx825/WAM-Adapter"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models%20(coming%20soon)-FFD21E?style=flat&labelColor=555555" alt="Hugging Face"></a>
+  <a href="https://huggingface.co/ldx825/WAM-Adapter"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-FFD21E?style=flat&labelColor=555555" alt="Hugging Face"></a>
   <a href="https://github.com/ldx825/WAM-Adapter"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat&labelColor=555555&logo=github&logoColor=white" alt="GitHub"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-3DA639?style=flat&labelColor=555555" alt="License"></a>
 </p>
@@ -65,8 +65,10 @@
 ## 📰 News
 
 - **2026-10**: Complete training / evaluation code and the RoboTwin 2.0 pipeline are released.
-- **Coming soon**: arXiv paper, project page, and pretrained checkpoints on Hugging Face. Watch this
-  repository or the badges above.
+- **2026-10**: Pretrained checkpoints for RoboTwin 2.0 and all four LIBERO suites are released on
+  [Hugging Face](https://huggingface.co/ldx825/WAM-Adapter); the
+  [project page](https://ldx825.github.io/WAM-Adapter-Homepage/) is live.
+- **Coming soon**: arXiv paper.
 
 ---
 
@@ -166,6 +168,22 @@ pip install -e .      # CUDA environment with torch==2.7.1+cu128 (see pyproject.
 Requirements: Python ≥ 3.10, a CUDA-capable GPU for training/evaluation.
 
 ### Model assets
+
+Pretrained WAM-Adapter checkpoints are hosted on
+[Hugging Face](https://huggingface.co/ldx825/WAM-Adapter):
+
+| File | Benchmark | Steps |
+|---|---|---|
+| `wam_adapter_robotwin50_240k.pt` | RoboTwin 2.0 (50 tasks) | 240k |
+| `wam_adapter_libero_spatial_70k.pt` | LIBERO-Spatial | 70k |
+| `wam_adapter_libero_object_60k.pt` | LIBERO-Object | 60k |
+| `wam_adapter_libero_goal_80k.pt` | LIBERO-Goal | 80k |
+| `wam_adapter_libero_long_80k.pt` | LIBERO-Long | 80k |
+
+```bash
+# Example: download the RoboTwin 2.0 checkpoint
+huggingface-cli download ldx825/WAM-Adapter wam_adapter_robotwin50_240k.pt
+```
 
 The Video-DiT backbone is [`Wan-AI/Wan2.1-T2V-1.3B`](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B).
 Download `Wan2.1-T2V-1.3B` locally and point the loader at it (DiffSynth model manager):
