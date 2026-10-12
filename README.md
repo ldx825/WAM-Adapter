@@ -99,10 +99,6 @@ control.
 
 ## 🧠 Method
 
-<table>
-<tr>
-<td width="62%">
-
 Three design decisions keep both **adaptation** and **action readout** lightweight:
 
 1. **Frozen Video-DiT + LoRA.** The pretrained `Wan2.1-T2V-1.3B` backbone stays frozen; LoRA
@@ -117,14 +113,9 @@ Three design decisions keep both **adaptation** and **action readout** lightweig
 
 Setting `num_future_slots = 0` turns the same code into the current-frame-only control.
 
-</td>
-<td width="38%">
-
-<img src="assets/architecture.png" alt="WAM-Adapter architecture">
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="assets/architecture.png" alt="WAM-Adapter architecture" width="100%">
+</p>
 
 ---
 
@@ -153,8 +144,11 @@ Full comparison tables and ablations (temporal groups, cross-layer fusion, all-l
 rank sweep) will be included with the arXiv release.
 
 <p align="center">
-  <img src="assets/rank_ablation.png" alt="Adaptation ablation" width="45%">
-  <img src="assets/figure5.png" alt="Readout analysis" width="53%">
+  <img src="assets/figure5.png" alt="Readout analysis" width="90%">
+</p>
+
+<p align="center">
+  <img src="assets/rank_ablation.png" alt="Adaptation ablation" width="55%">
 </p>
 
 ---
