@@ -12,7 +12,7 @@
 </p>
 
 <p>
-  <strong>Dongxu Liu</strong><sup>1,*</sup>&emsp;
+  <strong>Dongxu Liu</strong><sup>1,2,*</sup>&emsp;
   <strong>Zhe Li</strong><sup>1,*</sup>&emsp;
   <strong>Zundong Ke</strong><sup>1</sup>&emsp;
   <strong>Zhipeng Zhang</strong><sup>1,†</sup>
@@ -20,6 +20,7 @@
 
 <p>
   <sup>1</sup>AutoLab, School of Artificial Intelligence, Shanghai Jiao Tong University<br>
+  <sup>2</sup>Awaken Robotics<br>
   <sup>*</sup>Equal contribution&emsp;&emsp;<sup>†</sup>Corresponding author
 </p>
 
