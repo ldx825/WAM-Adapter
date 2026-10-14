@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Shared training launcher; task-specific wrappers provide dataset and readout overrides.
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -105,7 +106,7 @@ if [[ -n "${TEXT_EMBED_CACHE_DIR}" ]]; then
 fi
 
 echo "[launch] task=${TASK_NAME}"
-echo "[launch] mode=wam_adapter_libero gpus=${GPU_IDS} num_processes=${NUM_PROCESSES} port=${MAIN_PROCESS_PORT}"
+echo "[launch] mode=wam_adapter gpus=${GPU_IDS} num_processes=${NUM_PROCESSES} port=${MAIN_PROCESS_PORT}"
 echo "[launch] suite=${SUITE_NAME}"
 echo "[launch] run_tag=${RUN_TAG}"
 echo "[launch] output_dir=${OUTPUT_DIR}"

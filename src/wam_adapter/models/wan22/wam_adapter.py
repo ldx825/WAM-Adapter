@@ -7,6 +7,10 @@ Training, checkpointing and RoboTwin inference all live in this single
 ``nn.Module`` class, which keeps the complete execution path straightforward
 to step through in a debugger.  Low-level Wan, VAE, scheduler and
 action-decoder components remain reusable modules.
+
+The model infrastructure is adapted from Light-WAM and Fast-WAM. The
+temporal-group readout and its integration implement the WAM-Adapter path.
+See LICENSE and the README acknowledgements at the repository root.
 """
 
 import time

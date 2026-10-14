@@ -184,7 +184,7 @@ def _maybe_apply_training_run_config(cfg: DictConfig, usr_args: Dict[str, Any]) 
     return merged_cfg
 
 
-class WorldActionRobotWinPolicy:
+class WAMAdapterRobotwinPolicy:
     def __init__(
         self,
         model_cfg: DictConfig,
@@ -245,7 +245,7 @@ class WorldActionRobotWinPolicy:
         self._timing_rollout = {"infer_s": 0.0, "sim_s": 0.0}
 
         logger.info(
-            "Initialized WorldActionRobotWinPolicy | ckpt=%s | stats=%s | horizon=%d | replan=%d",
+            "Initialized WAMAdapterRobotwinPolicy | ckpt=%s | stats=%s | horizon=%d | replan=%d",
             checkpoint_path,
             dataset_stats_path,
             self.action_horizon,
@@ -466,7 +466,7 @@ def get_model(usr_args: Dict[str, Any]):
         usr_args.get("timing_enabled", cfg.EVALUATION.get("timing_enabled", False))
     )
 
-    policy = WorldActionRobotWinPolicy(
+    policy = WAMAdapterRobotwinPolicy(
         model_cfg=cfg.model,
         processor_cfg=cfg.data.train.processor,
         checkpoint_path=str(checkpoint_path),

@@ -95,7 +95,7 @@ env \
   TEMPORAL_PREFIX_WEIGHT=1.0 TEMPORAL_TAIL_WEIGHT=1.0 \
   MOT_CHECKPOINT_MIXED_ATTN=False VIDEO_LATENT_SPATIAL_DOWNSAMPLE_FACTOR=2 \
   PARAMETER_REPORT_ENABLED=true PYTORCH_CUDA_ALLOC_CONF=expandable_segments:False \
-  bash "${SCRIPT_DIR}/train_libero_core.sh" \
+  bash "${SCRIPT_DIR}/train_core.sh" \
     model=wam_adapter \
     model._target_=wam_adapter.runtime.create_wam_adapter \
     +model.action_decoder_config.num_future_slots=2 \

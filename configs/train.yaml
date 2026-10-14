@@ -85,7 +85,7 @@ benchmark:
 wandb:
   enabled: false
   workspace: null
-  project: fast-wam
+  project: wam-adapter
   name: train
   group: null
   mode: online

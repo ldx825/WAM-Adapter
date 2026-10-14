@@ -7,7 +7,7 @@ cd "${REPO_ROOT}"
 export PYTHONPATH="${REPO_ROOT}/src:${REPO_ROOT}:${PYTHONPATH:-}"
 export HYDRA_FULL_ERROR="${HYDRA_FULL_ERROR:-1}"
 
-TASK_NAME="${TASK_NAME:-real_robot_hdf5_3cam_384_1e-4}"
+TASK_NAME="${TASK_NAME:-real_robot}"
 EXTRA_ARGS=("$@")
 
 DATASET_ROOT="${DATASET_ROOT:-${REPO_ROOT}/data/real_robot_hdf5_raw}"

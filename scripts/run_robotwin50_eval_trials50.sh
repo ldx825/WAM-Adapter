@@ -54,7 +54,7 @@ echo "[eval-launch] gpus=${GPU_IDS} procs_per_gpu=${MAX_PROCESSES_PER_GPU}"
 echo "[eval-launch] trials/task/condition=${NUM_TRIALS} trials_per_shard=${TRIALS_PER_SHARD}"
 echo "[eval-launch] n_tasks=$(awk -F, 'NF>0{print NF}' <<< "${TASKS}")"
 
-exec "${PYTHON_BIN}" "${SCRIPT_DIR}/run_robotwin_fourtask_eval_queue.py" \
+exec "${PYTHON_BIN}" "${SCRIPT_DIR}/run_robotwin_eval_queue.py" \
   --checkpoint "${CKPT}" \
   --output-dir "${OUTPUT_DIR}" \
   --tasks "${TASKS}" \

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Baige entrypoint: build caches and then run the resumable 500k recipe.
+# WAM-Adapter pipeline: build caches and then run the resumable 500k recipe.
 # Set STAGE=cache or STAGE=train to run only one half.
 set -euo pipefail
 
@@ -54,7 +54,7 @@ export WAM_ADAPTER_HF_HOME="${WAM_ADAPTER_HF_HOME:-${RUN_DIR}/.cache/huggingface
 
 status() {
   printf '%s status=%s\n' "$(date '+%Y-%m-%d %H:%M:%S %Z')" "$*" \
-    | tee -a "${STATUS_DIR}/baige_job_status.log"
+    | tee -a "${STATUS_DIR}/pipeline_status.log"
 }
 on_exit() {
   local rc=$?

@@ -1,3 +1,8 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# Adapted from PyTorch3D rotation conversions; see LICENSES/PyTorch3D-BSD.txt
+# at the repository root for the license text.
 
 from typing import Optional, Union, Literal, List
 import torch

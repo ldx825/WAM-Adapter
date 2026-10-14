@@ -1,3 +1,6 @@
+# Runtime infrastructure adapted from Light-WAM and Fast-WAM.
+# See LICENSE and the README acknowledgements at the repository root.
+
 import logging
 import os
 import inspect
@@ -11,7 +14,7 @@ import numpy as np
 from einops import repeat
 from omegaconf import OmegaConf
 
-from .trainer import Wan22Trainer
+from .trainer import WAMAdapterTrainer
 from .utils.logging_config import get_logger, setup_logging
 from .utils.video_io import save_mp4
 from .utils import misc
@@ -278,7 +281,7 @@ def run_training(cfg: DictConfig):
     model = instantiate(cfg.model, model_dtype=model_dtype, device=model_device)
     train_ds, val_ds = build_datasets(cfg.data)
 
-    trainer = Wan22Trainer(
+    trainer = WAMAdapterTrainer(
         cfg=cfg,
         model=model,
         train_dataset=train_ds,

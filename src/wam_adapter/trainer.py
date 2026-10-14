@@ -1,3 +1,6 @@
+# Training infrastructure adapted from Light-WAM and Fast-WAM.
+# See LICENSE and the README acknowledgements at the repository root.
+
 import logging
 import json
 import inspect
@@ -27,7 +30,7 @@ from .utils.video_metrics import pil_frames_to_video_tensor, video_psnr, video_s
 logger = get_logger(__name__)
 
 
-class Wan22Trainer:
+class WAMAdapterTrainer:
     def __init__(self, model, train_dataset, val_dataset=None, *, cfg: DictConfig):
         self.model = model
         self.train_dataset = train_dataset
@@ -325,7 +328,7 @@ class Wan22Trainer:
                 return sample
             return sample[:batch_size]
         if isinstance(sample, dict):
-            return {key: Wan22Trainer._slice_sample_batch(value, batch_size=batch_size) for key, value in sample.items()}
+            return {key: WAMAdapterTrainer._slice_sample_batch(value, batch_size=batch_size) for key, value in sample.items()}
         if isinstance(sample, list):
             return sample[:batch_size]
         if isinstance(sample, tuple):

@@ -27,8 +27,8 @@ log() { echo "[$(date '+%F %T')] $*" | tee -a "${WATCH_LOG}"; }
 tag_of() { printf '%06d' "$1"; }
 ckpt_of() { echo "${WEIGHTS_DIR}/step_$(tag_of "$1").pt"; }
 out_of() { echo "${WEIGHTS_DIR}/${EVAL_TAG}_step_$(tag_of "$1")"; }
-queue_running() { pgrep -f "run_robotwin_fourtask_eval_queue.py .*$1" >/dev/null 2>&1; }
-any_eval_running() { pgrep -f "run_robotwin_fourtask_eval_queue.py .*${WEIGHTS_DIR}" >/dev/null 2>&1; }
+queue_running() { pgrep -f "run_robotwin_eval_queue.py .*$1" >/dev/null 2>&1; }
+any_eval_running() { pgrep -f "run_robotwin_eval_queue.py .*${WEIGHTS_DIR}" >/dev/null 2>&1; }
 
 mkdir -p "${WEIGHTS_DIR}"
 touch "${WATCH_LOG}"

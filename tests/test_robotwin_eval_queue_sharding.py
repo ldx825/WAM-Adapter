@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-QUEUE_SCRIPT = REPO_ROOT / "scripts" / "run_robotwin_fourtask_eval_queue.py"
+QUEUE_SCRIPT = REPO_ROOT / "scripts" / "run_robotwin_eval_queue.py"
 
 
 def load_queue_module():

@@ -9,7 +9,7 @@ export HYDRA_FULL_ERROR="${HYDRA_FULL_ERROR:-1}"
 PYTHON_BIN="${PYTHON_BIN:-$(command -v python)}"
 TORCHRUN_BIN="${TORCHRUN_BIN:-$(command -v torchrun || true)}"
 
-TASK_NAME="${TASK_NAME:-real_robot_hdf5_3cam_384_1e-4}"
+TASK_NAME="${TASK_NAME:-real_robot}"
 DATASET_ROOT="${DATASET_ROOT:-${REPO_ROOT}/data/real_robot_hdf5_raw}"
 DATASET_DIRS="${DATASET_DIRS:-}"
 PREP_ROOT="${PREP_ROOT:-${REPO_ROOT}/data/real_robot_hdf5_prepared/default}"
